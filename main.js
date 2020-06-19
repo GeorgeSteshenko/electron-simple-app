@@ -8,7 +8,7 @@ function createWindow() {
   win = new BrowserWindow({
     width: 800,
     height: 600,
-    icon: path.join(__dirname, "/images/sysinfo.png"),
+    icon: path.join(__dirname, "/assets/icons/png/sysinfo.png"),
     webPreferences: {
       nodeIntegration: true,
     },
@@ -18,7 +18,7 @@ function createWindow() {
   win.loadFile("index.html");
 
   // Open devtools
-  win.webContents.openDevTools();
+  // win.webContents.openDevTools();
 
   win.on("closed", () => (win = null));
 }
